@@ -960,10 +960,6 @@ button {
    DESIGN
 ========================================================= */
 
-/* =========================================================
-   DESIGN
-========================================================= */
-
 .design-grid {
     width: 100%;
     max-width: var(--max-width);
@@ -1004,9 +1000,7 @@ button {
 }
 
 
-/* ---------------------------------------------------------
-   DESIGN IMAGE
---------------------------------------------------------- */
+/* Design Image */
 
 .design-image {
     width: 100%;
@@ -1039,9 +1033,7 @@ button {
 }
 
 
-/* ---------------------------------------------------------
-   DESIGN CONTENT
---------------------------------------------------------- */
+/* Design Content */
 
 .design-content {
     display: flex;
@@ -1084,9 +1076,7 @@ button {
 }
 
 
-/* ---------------------------------------------------------
-   DESIGN TAGS
---------------------------------------------------------- */
+/* Design Tags */
 
 .design-tags {
     display: flex;
@@ -1116,9 +1106,7 @@ button {
 }
 
 
-/* ---------------------------------------------------------
-   DESIGN PROJECT LINK
---------------------------------------------------------- */
+/* Design Project Link */
 
 .design-content .project-link {
     display: inline-flex;
@@ -1141,60 +1129,6 @@ button {
     color: var(--text);
 
     transform: translateX(4px);
-}
-
-
-/* =========================================================
-   DESIGN — TABLET
-========================================================= */
-
-@media (max-width: 950px) {
-
-    .design-grid {
-        grid-template-columns: 1fr;
-        max-width: 760px;
-    }
-
-}
-
-
-/* =========================================================
-   DESIGN — MOBILE
-========================================================= */
-
-@media (max-width: 760px) {
-
-    .design-grid {
-        grid-template-columns: 1fr;
-
-        gap: 20px;
-    }
-
-    .design-image {
-        height: 280px;
-    }
-
-    .design-content {
-        padding: 24px;
-    }
-
-}
-
-
-/* =========================================================
-   DESIGN — SMALL MOBILE
-========================================================= */
-
-@media (max-width: 430px) {
-
-    .design-image {
-        height: 240px;
-    }
-
-    .design-content {
-        padding: 23px;
-    }
-
 }
 
 
@@ -1584,7 +1518,7 @@ button {
 
 
 /* =========================================================
-   RESPONSIVE — TABLET
+   RESPONSIVE — TABLET (Max-width: 950px)
 ========================================================= */
 
 @media (max-width: 950px) {
@@ -1611,6 +1545,11 @@ button {
         grid-template-columns: 1fr;
     }
 
+    .design-grid {
+        grid-template-columns: 1fr;
+        max-width: 760px;
+    }
+
     .contact-wrapper {
         grid-template-columns: 1fr;
 
@@ -1621,7 +1560,7 @@ button {
 
 
 /* =========================================================
-   RESPONSIVE — MOBILE
+   RESPONSIVE — MOBILE (Max-width: 760px)
 ========================================================= */
 
 @media (max-width: 760px) {
@@ -1721,6 +1660,18 @@ button {
         grid-template-columns: 1fr;
     }
 
+    .design-grid {
+        gap: 20px;
+    }
+
+    .design-image {
+        height: 280px;
+    }
+
+    .design-content {
+        padding: 24px;
+    }
+
     .experience-card {
         grid-template-columns: 1fr;
 
@@ -1753,7 +1704,7 @@ button {
 
 
 /* =========================================================
-   SMALL MOBILE
+   RESPONSIVE — SMALL MOBILE (Max-width: 430px)
 ========================================================= */
 
 @media (max-width: 430px) {
